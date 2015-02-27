@@ -1,0 +1,30 @@
+<?php
+/*
+ * UNHCR Camp Monitoring form*
+ * RSH Node API*
+ * Created jan 2015*
+ * License Proprietary*
+ * Owner Miami Kelvin*
+ * Publisher Miami Kelvin*
+ */
+
+# require_once ( dirname(__FILE__) . '/includes/functions.php');
+require_once ( dirname(__FILE__) . '/includes/functions.php');
+require_once ( dirname(__FILE__) . '/includes/campmonitoring.php');
+/**
+ * Implements hook_node_info()
+ */
+function rsh_camp_monitoring_node_info() {
+    return array(
+        'campmonitoring' => array(
+            'name' => t('Camp Monitoring Form'),
+            'base' => 'campmonitoring',
+            'description' => t('Camp monitoring form'),
+            'has_title' => TRUE,
+            'title_label' => t('Camp Settlement name')
+         )
+    );
+}
+function rsh_camp_monitoring_form($node, $form_state) {
+    return node_content_form($node, $form_state);
+}

@@ -1,0 +1,207 @@
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+#header-wrapper {
+  float: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+#header-wrapper .container {
+background-image: url('images/header_bg.png');
+height: 90px;
+background-position: 750px 0px;
+}
+#header-wrapper{
+    width: 770px;
+  
+}
+#header-wrapper header{
+  
+}
+#branding {
+  padding: 15px 0 0 0;
+}
+.region-header {
+  padding: 0 0 10px;
+}
+#branding hgroup {
+  margin-top: 0.8em;
+}
+.site-name-hidden #logo, .site-name-hidden #branding hgroup {
+display: block;
+height: 89px;
+overflow: hidden;
+width: 250px;
+}
+#branding,
+.region-header {
+  float: left;
+  text-align: center;
+  display: table;
+  padding: 0px;
+}
+.one-sidebar .sidebar {
+width: 94%;
+margin-left: 3%;
+}
+#content-column{
+  min-width:555px;
+}
+
+.one-sidebar .sidebar .block-login .item-list{
+  width: 55%;
+  float:left;
+  
+}
+.one-sidebar .sidebar .block-login .item-list ul li{
+  padding:3px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+#block-user-login .form-item label{
+  padding:4px;
+  width:28%
+}
+.one-sidebar .sidebar .block-login .form-actions {
+  width:40%;
+  float:right;
+  margin-top:-40px
+  
+}
+#site-name,
+#site-slogan {
+  text-align: left;
+}
+#site-name {
+  font-size: 3.5em;
+}
+.content-style {
+  padding: 12px 15px;
+}
+#secondary-content-wrapper,
+#top-panels-wrapper,
+#content-wrapper,
+#footer-panels-wrapper,
+#tertiary-content-wrapper {
+  margin-bottom: 10px;
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+#menu-bar .block > ul > li {
+  margin: 0 1px 1px 0;
+}
+#menu-bar-wrapper .nav .block-menu li a,
+#menu-bar-wrapper #menu-bar li.sf-depth-1,
+#menu-bar-wrapper #menu-bar li.sf-depth-1 > a,
+#menu-bar-wrapper .region-header .block-content > ul > li > a {
+  border-radius: 6px 6px 6px 0;
+}
+.region-header .block {
+  overflow: hidden;
+}
+.region-header .block ul li {
+  display: block;
+  text-align: center;
+  float: none;
+}
+.region-header .block ul li a {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{}
+#authorize {
+height: 20px;
+background: #fff;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+.authorize {
+width: 200px;
+position: absolute;
+z-index: 100;
+margin-left: 40%;
+margin-top: -130px;
+}
+.logout_register {
+float: right;
+width: 90px;
+float: left;
+width: 105px;
+background: rgb(5,105,155);
+z-index: 10;
+border-bottom-left-radius: 10px;
+border: 1px solid #fff;
+margin-top: -3px;
+text-align: center;
+font-weight: bolder;
+}
+.authorize ul {
+list-style-type: none;
+margin: 0;
+}
+.user_signin {
+float: right;
+width: 90px;
+background: rgb(5,105,155);
+border-bottom-right-radius: 10px;
+border: 1px solid #fff;
+margin-top: -3px;
+text-align: center;
+font-weight: bolder;
+}
+.authorize ul li a { color:#fff}
+.block h2, h2 {
+color: #4883da;
+}
+.not-logged-in .field .field-items .page_title, .not-logged-in .group-header .field-name-title .field-items .field-item {
+width: 0px !important;
+height: 1px !important;
+overflow: hidden;
+}
+.ds-2col-stacked > .group-header {
+width: 99%;
+min-width: 420px;
+text-align: justify;
+}
+#quicktabs-container-logged_out_front_page {
+min-height: 150px;
+display: block;
+border-top: 1px solid #e1e1e1;
+border-bottom: 1px solid #e1e1e1;
+border-right: 1px solid #e1e1e1;
+padding-bottom: 10px;
+margin-left: 10px;
+padding: 8px;
+border-left: 1px solid #e1e1e1;
+}
+.region-footer .region-inner section.block-7 {
+width: 46%;
+float: left;
+clear: none !important;
+display: inline-table;
+margin-left: 10px;
+border-right:1px solid #e1e1e1;
+}
+.region-footer .region-inner section#block-menu-menu-footer-menu, .region-footer .region-inner #block-menu-menu-footer-menu {
+width: 52% !important;
+float: left;
+clear: none !important;
+display: inline-table;
+float:right
+}
+.region-footer .region-inner{
+  border:1px solid #e1e1e1;
+  margin-left:3%;
+  width:94%;
+  height:auto
+}
+#footer-wrapper div.block-inner.clearfix {
+height: auto;
+}

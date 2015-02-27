@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Styling for the ds-2col-stacked template.
+ */
+
+.ds-2col-stacked > .group-header {
+	width:100%;
+	height:300px;
+}
+.ds-2col-stacked > .group-left {
+  float: left; /* LTR */
+  width: 50%;
+}
+
+.ds-2col-stacked > .group-right {
+  float: right; /* LTR */
+  width: 50%;
+}
+
+.toolkit_projects_content_layout > .group-left{width: 68%;}
+.toolkit_projects_content_layout .group-right{width: 30%;}
+
+.ds-2col-stacked > .group-footer {
+  clear: both;
+}

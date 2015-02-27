@@ -1,0 +1,1478 @@
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+th,td {padding: 10px 14px;}
+
+/*Header section of the website*/
+#header-wrapper{}
+#header-wrapper .container{background-image: url('images/header_bg.png');height: 90px;}
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{
+   height:45px;
+   
+}
+
+.content-style {
+min-width: 760px;
+}
+
+
+#menu-bar-wrapper .container{
+    height:45px;
+    /*background: #0066A4;*/
+}
+#menu-bar{
+    /*shift the menu bar to cater for the background serving as the logo*/
+    height: 40px;
+    top: 0;
+    padding: 0;
+    background: url(images/unhcr_header_back.jpg) 0px 0px repeat-x;
+}
+.toolkit_logo_block{}
+
+/*some added css styling */
+/*maps*/
+
+#popup #popup_FrameDecorationDiv_0{
+	-o-border-top-left-radius:10px;
+	-moz-border-top-left-radius:10px;
+	-ms-border-top-left-radius:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_1{
+	-o-border-top-right-radius:10px;
+	-moz-border-top-right-radius:10px;
+	-ms-border-top-right-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_3{
+	-moz-border-bottom-right-radius: 10px;
+	-ms-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-o-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: 0.1px solid #cff;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_2{
+	-moz-border-bottom-left-radius: 10px;
+	-ms-border-bottom-left-radius: 10px;
+	-o-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	
+	border-bottom: 0.1px solid #cff;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_4{}
+#popup #popup_contentDiv{
+	background:#FFF;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	
+	/* START MOSES EDIT 8 ** 2013-10-02 */
+	
+	
+	
+	/* END MOSES EDIT 8 */
+}
+/*end maps*/
+
+
+.toolkit_projects_content_top .field-type-image{float:left;}
+.toolkit_projects_content_top .field-type-postgis{float:left; margin-left:10px;}
+.toolkit_projects_content_top .group-project-summary-display{float:left; margin-left:10px;}
+.toolkit_projects_content_top .field-type-file{float:right; margin-left:10px; clear:both}
+
+
+
+/* end custom css and styling */
+/*Branding*/
+#branding{
+    padding: 0;
+}
+.branding-elements{
+    margin: 0;
+}
+
+#logo{
+
+}
+.toolkit_catalogu_content_c_left{
+    width: 60% !important;
+	
+}
+.toolkit_catalogue_content_c_right{
+    width: 38% !important;
+	
+}
+/*Work on the Blocks*/
+.toolkit_menu{
+    /*This is the block containing the main menu implemented using OM Maximenu*/
+    /*border-left: 1px solid white;*/
+    top: 2px;
+    width: 720px;
+}
+
+/*OM Maximenu-Overrides and customisation*/
+#om-maximenu-main-menu{}
+#om-menu-main-menu-ul-wrapper{}
+#om-menu-main-menu{width:800px;}
+.om-maximenu.om-maximenu-block ul.om-menu li.om-leaf .om-link {
+    float: left;
+    color: #fff;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+.front .toolkit_menu{}
+
+/*The menu bar also display login and logout links for the user*/
+#authorize{
+    height: 20px;
+    background: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.authorize{
+    width: 200px;
+    z-index: 100;
+    margin-left: 950px;
+    margin-top: -140px;
+}
+.authorize ul{
+    list-style-type: none;
+    margin: 0;
+}
+.authorize ul li a{
+    color: rgb(255, 255, 255);
+}
+.user_signin{
+    float: right;
+    width: 90px;
+    background: rgb(5,105,155);
+    border-bottom-right-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: -3px;
+    text-align: center;
+    font-weight: bolder;
+}
+.logout_register{
+    float: right;
+    width: 90px;
+    float: left;  
+    width: 105px;  background: rgb(5,105,155);  z-index: 10;  
+    border-bottom-left-radius: 10px;  border: 1px solid #fff;  margin-top: -3px;  text-align: center;  font-weight: bolder;
+
+
+
+
+
+}
+
+/*Customise the user registration page.This is still a development feature.Not complete*/
+.page-user-register .container .tabs{
+    display:none;
+}
+.page-user-register .container .content-style{}
+.page-user-register .container .content-style #page-title{
+    text-align: left;
+    color: #0066A4;
+}
+.page-user-register #content{}
+
+/*
+
+    A User Dashboard. 
+    Opted not to use panels or Homebox for the sake of responsive design
+*/
+.page-dashboard{}
+.page-dashboard .content-style{
+    min-height: 0px;
+    padding: 0;
+    background-color: white;
+    border: 0;
+}
+
+.dashboard_content_menu{}
+.logged-in .content-margin{margin: 0;}
+.logged-in #main-content{margin: 0;}
+#block-quicktabs-frontpage .block-inner{
+    margin: 0;
+}
+#quicktabs-frontpage{
+    min-height: 300px;
+	display:table-cell;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+border-right: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+.view-project-types .item-list{
+	width:80% !important;
+	margin-left:10%;
+}
+#quicktabs-frontpage .item-list{
+    width: 25%;
+    float: left;
+}
+#quicktabs-frontpage .item-list ul.quicktabs-tabs{
+    margin: 0;
+}
+#quicktabs-frontpage .item-list ul.quicktabs-tabs li{
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    margin-left: 0;
+    height: 40px;
+    background: #4883da;
+}
+#quicktabs-frontpage .item-list ul.quicktabs-tabs li.active{
+    background: white;
+}
+#quicktabs-frontpage .item-list ul.quicktabs-tabs li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #e6e9ef;
+}
+#quicktabs-frontpage .item-list ul.quicktabs-tabs li.active a{
+    color: #4883da;
+}
+#quicktabs-container-frontpage{
+    width: 73%;
+    float: left;
+    border-left: 1px solid #e1e1e1;
+    height: 100%;
+    padding: 5px;
+    min-height: 300px;
+}
+.block-catalogue-frames-block{
+    /*background: rgb(234, 250, 252);*/
+
+margin-top: 20px;
+min-height: 200px;
+padding: 10px;
+    }
+.project_types{
+	/*background: rgb(234, 250, 252);*/
+
+min-height: 200px;
+padding: 10px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+.openlayers_projects{}
+.group_home_block_left .field-name-body {
+	padding-right:10px;
+	text-align:justify;
+}
+
+/*Administrative dashboard*/
+.page-tools{}
+.page-tools #content-wrapper{/*min-height: 700px;*/}
+.page-tools .content-style{
+    min-height: 0px;
+    padding: 0;
+    background-color: white;
+    border: 0;
+}
+#block-quicktabs-admin-tabs .block-inner{
+    margin: 0;
+}
+#quicktabs-admin-tabs{
+    min-height: 300px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+#quicktabs-admin_tabs .item-list{
+    width: 25%;
+    float: left;
+}
+#quicktabs-admin_tabs .item-list ul.quicktabs-tabs{
+    margin: 0;
+}
+#quicktabs-admin_tabs .item-list ul.quicktabs-tabs li{
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    margin-left: 0;
+    height: 40px;
+    background: #4883da;
+}
+#quicktabs-admin_tabs .item-list ul.quicktabs-tabs li.active{
+    background: white;
+}
+#quicktabs-admin_tabs .item-list ul.quicktabs-tabs li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #e6e9ef;
+}
+#quicktabs-admin_tabs .item-list ul.quicktabs-tabs li.active a{
+    color: #4883da;
+}
+#quicktabs-container-admin_tabs{
+    width: 100%;
+    float: right;
+    border-left: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+border-right: 1px solid #e1e1e1;
+    height: 100%;
+    padding: 5px;
+    min-height: 300px;
+}
+.quicktabs_main .ds-2col-stacked .group-header{height: 70px; margin-bottom: 10px;}
+/************************************************FORMS***********************************************************/
+/**project creation form**/
+#project-node-form{}
+
+/*Styling for the projects Landing Page*/
+.page-projects .content-margin{
+    margin: 0;
+}
+.page-projects .content-style{
+    border: none;
+    padding: 0px;
+}
+.page-projects #page-title{
+    display: none;
+}
+.add_project{
+    width: 100%;
+
+    float: left;
+    height: 50px;
+    margin-bottom: 15px !important;
+
+}
+.add_project .block-inner{
+    height: 50px;
+}
+.add_project .block-inner .block-content{
+    height: 50px;
+}
+.add_project .block-inner .block-content ul{
+    height: 50px;
+}
+.add_project .block-inner .block-content ul li{
+    height: 50px;
+}
+.add_project .block-inner .block-content ul li a{
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background: #4883da;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    width: 80%;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.5), 
+        0 2px 2px rgba(0,0,0,0.3), 
+        0 0 4px 1px rgba(0,0,0,0.2); 
+    /* Font styles */
+    text-decoration: none;
+}
+#block-views-project-types-block-1{
+   /* width: 30%;*/
+    float: left;
+}
+.page-projects .block{
+    clear: none;
+}
+.page-projects #main-content{margin: 0;}
+.latest_projects_custom{
+    width: 92%;
+    float: left;
+
+}
+section.latest_projects{border: 1px solid #e1e1e1;
+
+/* START MOSES EDIT 2 ** 2013-10-02 */
+
+/* margin-right: 0px; */
+width: 315px;
+
+/* END MOSES EDIT 2 */
+min-height: 200px;
+background: rgb(234, 250, 252);
+
+
+float: right;}
+section.latest_projects .block-content .view-projects .view-content .views-row{
+	background:#fff;
+	margin-bottom:5px;
+	padding-left: 10px;
+}
+.sidebar-first .content-inner {
+	margin-right:26% !important;
+}
+
+.node-type-situation-report.sidebar-first .content-inner{
+	margin-right:0% !important;
+}
+.latest_projects_custom,#block-views-project-types-block-1{
+    border: 1px solid #e1e1e1;
+margin-right: 0px;
+padding: 0px;
+min-height: 200px;
+
+padding: 10px;
+float: right;
+}
+
+/*Projects Quicktab*/
+.projects_quicktab{background: #fff;border: 1px solid #e1e1e1;margin-right: 5px;}
+.projects_quicktab .block-inner{
+    margin: 0;
+}
+.projects_quicktab .view-filters{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+#quicktabs-projects{
+
+}
+#quicktabs-projects .item-list{
+    height: 40px;
+    background: #e1e1e1;
+}
+#quicktabs-projects .item-list ul{
+    height: 100%;
+    margin: 0;
+    padding-right: 30px;
+}
+#quicktabs-projects .item-list ul li{
+    height: 35px;
+    float: right;
+    width: 40px;
+    display: block;
+    margin: 2px;
+}
+
+/* START MOSES EDIT 5 ** 2013-10-02 */
+
+
+#quicktabs-projects .item-list ul li a:active{
+
+    height: 35px%;
+    float: right;
+    display: block;
+    background: white;
+    margin-right: 10px;
+    min-width: 110px;
+    border-top-right-radius: 10px;
+
+}
+
+/* END MOSES EDIT 5 */
+
+#quicktabs-projects .item-list ul li.even{
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+#quicktabs-projects .item-list ul li.odd{
+    background-repeat: no-repeat;
+    color: #e1e1e1;
+}
+.view-projects .view-filters{
+    margin-top: -60px;
+}
+.views-widget-filter-field_project_country_tid label{
+    float: left;
+}
+.views-widget-filter-field_project_country_tid .views-widget{float:left; margin-left:20px;}
+#views-exposed-form-projects-block-4 .views-submit-button #edit-submit-projects{
+    margin-top: 0px;
+    float: left;
+}
+
+
+#quicktabs-projects .item-list ul li a{
+/*
+display: inline-block;
+height: 35px;
+width: 35px;
+font-weight: bolder;
+*/
+
+/* START MOSES EDIT 4 ** 2013-10-02 */
+
+position: relative !important;
+display: block;
+float: right;
+padding: 4px 8px;
+background: #4883da;
+color: white;
+border: 1px solid rgba(0,0,0,0.15);
+border-radius: 4px;
+
+font-size: 14px;
+transition: all 0.3s ease-out;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.3), 0 0 4px 1px rgba(0,0,0,0.2);
+text-decoration: none;
+
+/* END MOSES EDIT 4 */
+}
+
+/* START MOSES EDIT 6 ** 2013-10-02 */
+
+/*
+Notes by Moses:
+
+CSS attributes below position the buttons
+May not be ideal for responsiveness
+Consider revision
+*/
+
+#quicktabs-projects .item-list ul li.odd{
+margin-right: 60px;
+}
+
+/* END MOSES EDIT 6 */
+
+#quicktabs-container-projects{
+    padding: 15px;
+}
+.projects-row{height: 220px;
+					border-bottom: 1px solid #e1e1e1;
+					border: 1px solid #4883da;
+					margin-bottom: 5px;
+					box-shadow: 2px 2px 2px #4883da;
+					
+background: rgb(234, 250, 252);}
+.page-taxonomy-term h1#page-title{
+	margin: 0 0 2px;
+padding: 0;}
+/*display of individual project nodes*/
+.toolkit_projects_content_top .field-name-title {
+    background: #4883da;
+}
+
+/*======================End Individual Project Nodes Display=======================*/
+
+/*Footer menu-The menu appearing at every web page foot*/
+.footer_menu{
+    height: 20px;
+}
+.footer_menu ul.menu{
+
+}
+ul li.leaf{
+    list-style-image: none;
+list-style-type: none;
+width: auto;
+float: left;
+margin-bottom: 8px;
+}
+
+.footer_menu ul.menu li{
+    height: 20px;
+    margin-right: 5px;
+    padding: 5px;
+    color: #fff !important;
+    list-style: none;  list-style-image: url(images/next.png);
+}
+.footer_menu ul.menu li a{
+    color:#fff !important;
+    
+}
+.footer_menu ul.menu li a:hover{
+    color:#000 !important;
+    
+}
+.region-footer .region-inner section.contextual-links-region ul li{
+    list-style: none;
+    list-style-image: url(images/next.png);
+
+
+}
+.region-footer .region-inner section.contextual-links-region a{
+    color:#fff;
+    font-weight:700;
+}
+.region-footer .region-inner section.contextual-links-region h2.block-title{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    padding-left:15px;
+    border-top:0px !important;
+    color: #fff !important;
+    font-size: 16px;
+    padding-top: 8px;
+}
+.region-footer .region-inner section#block-menu-menu-footer-menu{
+    width: 52% !important;
+	float:right;
+	background: #4883da;
+clear: none !important;
+color: #fff !important;
+display: inline-table;
+margin-left: 5px;
+}
+.region-footer .region-inner section#block-menu-menu-footer-menu .block-inner .block-content{
+    float: left;  display: block;
+    margin-left: 30px;
+}
+.region-footer .region-inner section#block-menu-menu-footer-menu h2.block-title{
+    border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+padding-left: 15px;
+border-top: 0px !important;
+color: #fff !important;
+font-size: 16px;
+padding-top: 8px;
+}
+.region-footer .region-inner section.contextual-links-region{
+    width: 47%;
+    float: left;
+    background: #4883da;
+    clear: none !important;
+   color:#fff !important;
+
+    display: inline-table;
+    margin-left: 5px;
+}
+.region-footer .region-inner section.block-7{
+    width: 47%;
+    float: left;
+    background: #4883da;
+    clear: none !important;
+   color:#fff !important;
+
+    display: inline-table;
+    margin-left: 5px;
+}
+
+
+.region-footer .region-inner section.block-7 ul li{
+    list-style: none;
+    list-style-image: url(images/next.png);
+
+}
+.region-footer .region-inner section.block-7 a{
+    color:#fff;
+    font-weight:700;
+}
+.region-footer .region-inner section.block-7 h2.block-title{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    padding-left:15px;
+    border-top:0px !important;
+    color: #fff !important;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+
+.region-footer .region-inner div.contextual-links-region{
+    background: #4883da;
+    float: right;
+    display: inline-table;
+    clear: none;
+    width: 50%;
+}
+.region-footer{
+    border-top: 1px solid #e1e1e1;
+	
+    /* padding-top: 5px; */
+}
+
+/*Handle the local tasks*/
+#tasks{
+	display:none;
+}
+.local_tasks{
+}
+.local_tasks ul.primary li{
+	display:/*block*/inline-table;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	margin-bottom:5px;
+}
+.local_tasks ul.primary li a{
+	display:block;
+	border-radius:0;
+}
+
+/*tinymce*/
+#tinymce p{
+    font-size: 14px;
+}
+.views-field-field-project-country{width: 250px;float: right;margin-top:-30px; font-weight:bold; color:#fff;}
+
+.views-label-field-project-country{
+    float: left;
+    margin-right: 10px;
+}
+.views-field-title .projects_field_title a{color:#fff; font-weight:bolder; margin-left:10px;}
+.projects_field_title{ margin-bottom:10px; /*box-shadow:2px 3px 6px rgba(0,105,155, 0.99);*/float: left;width: 100%; font-weight: 700;}
+.projects_project_description_field{
+    background: rgba(198, 200, 201, 0.2);
+    width: 72%;
+    height:140px;
+    overflow:hidden;
+    margin-bottom:10px;
+    padding:5px;
+    float: left;
+    margin-right: 3px;
+
+    padding-left: 10px;
+}
+.welcome_logo{width:16%; height:180px;float:left;}
+.welcome_content{float: left;min-height: 180px;}
+.front .content-style {padding:10px 10px; /*height:220px;*/}
+.welcome_logo img{width: 130px;}
+.projects_project_year{background: rgb(234, 250, 252);}
+/*custom*/
+.section-project-type .view-projects .view-filters { margin-left:5%; margin-top:5px;}
+.views-widget-filter-field_project_date_value .views-widget {margin-left:15px; float:left;}
+.views-widget-filter-field_project_date_value label{ float:left;}
+.section-project-type .views-exposed-form .views-exposed-widget .form-submit { margin-top:0px}
+
+.views-label-field-project-description projects_project_description_label{clear:both}
+.projects_project_year_label{float:left; margin-right:10px;margin-left: 10px;}
+.views-field-field-project-description{clear:both;}
+ul.field-name-field-project-boq li{
+	/*display: block !important;*/
+}
+.group-documents .with-legend span.field-label{
+	background:url(images/check-box-u.png) no-repeat;
+	height:32px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 40px;
+	font-size: 1em;
+font-weight: 700;
+line-height: inherit;
+margin: 0;
+	color: #4883da;
+}
+.group-documents .with-legend h3.field-label{
+	background:url(images/check-box-u.png) no-repeat;
+	height:32px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 40px;
+	font-size: 1em;
+font-weight: 700;
+line-height: inherit;
+margin: 0;
+	color: #4883da;
+}
+.group-documents .with-legend a{
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+	font-size: 12px !important;
+font-weight: normal !important;
+}
+.group-documents .with-legend .field-name-field-catalogue-download a{
+	font-size: 0.9em;
+	font-family: arial;    font-weight: bold;
+	color: #fff;
+	margin-left: 25px;
+}
+.catalogue_footer_left{
+	width:47%;
+	margin-right:0.5%;
+	margin:0 auto;
+
+	float:left;
+	padding:5px;
+	border:1px solid #e1e1e2;
+	margin-bottom:10px;
+}
+.catalogue_footer_right{
+	width:48%;
+	margin-left:0.5%;
+	margin:0 auto;
+	float:right;
+	padding:5px;
+	border:1px solid #e1e1e2;
+	margin-bottom::10px;
+}
+.group_footer_section{
+	
+}
+.catalogue_footer_right h3{
+background: #4883da;
+margin-bottom: 10px;
+/*box-shadow: 2px 3px 6px rgba(0,105,155, 0.99);*/
+float: left;
+width: 100%;
+padding-left: 10px;
+}
+.catalogue_footer_right h3 .field-group-format-toggler  .field-group-format-title{
+	color:#fff !important;
+}
+
+/* START MOSES EDIT 1 ** 2013-10-02 */
+
+/*
+h3 {font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;}
+*/
+
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+color: #4883da;
+font-size: 14px;
+font-weight: 700;
+padding-left: 4px;
+}
+
+/* END MOSES EDIT 1 */
+
+.catalogue_footer_left h3 .field-group-format-toggler  .field-group-format-title{
+	color:#fff !important;
+	font-weight: bolder;
+
+}
+.catalogue_other_implications h3 .field-group-format-toggler  .field-group-format-title{
+	color:#fff !important;
+}
+.catalogue_footer_left h3{
+background: #4883da;
+margin-bottom: 10px;
+/*box-shadow: 2px 3px 6px rgba(0,105,155, 0.99);*/
+float: left;
+width: 100%;
+padding-left: 10px;
+}
+.catalogue_other_implications h3{
+background: #4883da;
+margin-bottom: 10px;
+/*box-shadow: 2px 3px 6px rgba(0,105,155, 0.99);*/
+float: left;
+width: 100%;
+padding-left: 10px;
+}
+legend {
+background-color: #4883da;
+color: #fbfbfb !important;
+
+}
+.catalogue_other_implications{
+	width:98%;
+	padding:5px;
+	clear:both;
+
+	border:1px solid #e1e1e2;
+	margin-top:8px;
+	background:#fbfbfb;
+}
+.page-taxonomy-term-edit #overlay #overlay-content #page #content .region .block .content {
+}
+.page-taxonomy-term-edit{
+}
+.field-name-field-plans{
+	
+}
+.field-name-field-plans .field-items figure{
+	width: 47%;
+margin: 0 1% 0 2%;
+float: left;
+margin-bottom: 10px;
+}
+.group-technical-ilust h3{
+	background: rgb(255, 255, 255);
+margin-bottom: 10px;
+float: left;
+width: 98%;
+box-shadow: 5px 1px 15px #cff inset;
+padding-left: 10px}
+.group-footer-section-2{
+	clear:both;
+}
+.page-taxonomy-term .view-catalogue-maps{
+	width: 55%;
+overflow: hidden;
+float: left;
+}
+
+.node-type-project .field-name-field-project-photo, .section-catalogue .field-name-field-project-photo{
+	margin-left: 5%;
+	height: 250px;
+	overflow: hidden;
+	width: 45%;
+}
+.group-footer-section-2 .group-catalogue-footer-other{
+	width: 47%;
+padding: 5px;
+border: 1px solid #e1e1e2;
+margin-top: 8px;
+float: left;
+background: #fbfbfb;
+}
+.group-footer-section-2 .group-technical-ilust{
+	float: right;
+	min-width: 240px;
+	width: 48%;
+	background: #cff;
+	padding: 5px;
+	margin-top:5px;
+}
+.group-footer-section-2 .group-technical-ilust h3{
+		text-align: center !important;
+}
+.field-name-field-catalogue-download{
+	padding-left: 30px;
+	width: 50%;
+	border-top-right-radius: 10px;
+/*	background: url(images/winrar.png) no-repeat #4883da; */
+	border-top-left-radius: 10px;
+	height: 25px;
+	margin-bottom: -10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 1px 1px 2px #4883da;
+}
+.group-catalogue-references{
+	width:48%;
+	float:right;
+	padding:5px;
+	border:1px solid #e1e1e2;
+	margin-top:10px;
+}
+.group-catalogue-references h3{
+	background: #4883da;
+margin-bottom: 10px;
+/*box-shadow: 2px 3px 6px rgba(0,105,155, 0.99);*/
+float: left;
+width: 100%;
+	padding-left: 10px;
+}
+.group-catalogue-references h3 .field-group-format-toggler a{
+	color:#fff;
+}
+.group-documents .with-legend span.field-label{
+}
+.section-catalogue-frame .views-row .catalogue_page_photo_wrapper{
+	width:20%;
+	float:left;
+}
+.section-catalogue-frame .views-row .catalogue_page_title_wrapper{
+	background: #4883da;
+	margin-bottom: 10px;
+	/*box-shadow: 2px 3px 6px rgba(0,105,155, 0.99);*/
+	
+}
+.section-catalogue-frame .views-row .catalogue_page_title_wrapper .catalogue_page_title a{
+	font-weight:bolder;
+	color:#fff;
+	padding-left:10px;
+}
+.section-catalogue-frame .views-row .catalogue_page_title_wrapper .catalogue_page_title a:hover {
+	color:#cff;
+}
+.section-catalogue-frame .views-row .field-name-field-parts-description{
+	width:78%;
+	height: 190px;
+	overflow:hidden;
+	float:right;
+}
+.section-catalogue-frame .view-content .views-row {
+	clear: both;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccf;
+	display: inline-block;
+	width: 100%;
+}
+.page-tools .quicktabs_main .quicktabs-tabpage .ds-2col-stacked .group-header .field-type-blockreference .field-items .field-item .openlayers_projects{
+	border: 1px solid;
+height: 400px;
+overflow: hidden;
+}
+.page-tools .quicktabs_main .quicktabs-tabpage .ds-2col-stacked .group-header .field-name-body{
+	background: rgb(234, 250, 252);
+margin-bottom: 10px;
+}
+.section-shelterprojects .content-style #content .block .vocabulary-project-type{
+	overflow:hidden;
+}
+.view-projects .view-content .views-field-field-project-photo{ overflow:hidden;}
+.openlayers-container {max-width:920px; overflow:hidden}
+.view-project-types .view-header h2{
+	color: #4883da;
+
+	font-weight: bolder;
+
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+	font-size:18px !important;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.project_types .block-inner{
+background: #fff;
+margin-left: 0px;
+padding: 10px;
+padding-top: 0px;
+margin-top: 0px;
+padding-left: 0px;
+}
+.block-catalogue-frames-block .block-inner{
+	background: #fff;
+width: 93%;
+margin-left: 0px;
+padding: 10px;
+}
+.block-catalogue-frames-block .block-inner h2{	color: #4883da;
+font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+font-size:18px !important;
+margin: 7px 0 !important;
+text-transform:capitalize;
+margin-left: 10px;}
+.tab_introduction{padding:10px;}
+.views-widget-filter-field_project_type_tid label{clear: none;
+float: left;
+margin-right: 10px;
+}
+.views-widget-filter-field_project_type_tid .views-widget{float:left}
+.openlayers-views-map{
+
+width: 100%;
+overflow: hidden;
+}
+/*catalogue custom*/
+.section-catalogue-frame .view-content .views-row{
+height: 215px;
+overflow:hidden;
+border-bottom: 1px solid #e1e1e1;
+border: 1px solid #4883da;
+margin-bottom: 5px;
+box-shadow: 2px 2px 2px #4883da;
+background: rgb(234, 250, 252);
+}
+.section-catalogue-frame .views-row .field-name-field-parts-description .field-items .field-item{ height:190px; overflow:hidden;}
+.section-catalogue-frame .contextual-links-region header.clearfix{padding: 15px 30px;  border-top-right-radius:5px; border-top-left-radius:5px;}
+.section-catalogue-frame .content-style{ padding:0px;}
+.view-catalogue-frames .view-content{padding-left: 30px;
+padding-right: 30px;}
+.view-catalogue-frames .view-filters{padding-left: 30px;
+
+background: /*#4883da; */ /* Old browsers */
+
+}
+.field-name-field-project-coordinates .openlayers-container-map-project-display-map{
+	width:100% !important;
+}
+.field-name-field-project-coordinates .openlayers-container-map-project-display-map .openlayers-map-project-display-map{
+	width:100% !important;
+}
+.field-name-field-project-coordinates{
+	width:50%;
+	float:left;
+}
+.page-catalogue-frame h1#page-title{margin: 0 0 .2em !important;}
+.block h2, h2 {color: #4883da;}
+section .field{padding-left: 0px;}
+.field-name-field-recent-projects-quick ul.menu li a{
+display: inline-block;
+margin: 5px;
+padding: 8px 15px;
+background: #4883da;
+color: white;
+border: 1px solid rgba(0,0,0,0.15);
+border-radius: 4px;
+width: 80%;
+font-size: 16px;
+transition: all 0.3s ease-out;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.3), 0 0 4px 1px rgba(0,0,0,0.2);
+text-decoration: none;
+}
+.not-logged-in #footer-panels-wrapper {
+background: rgba(255, 255, 255, .1);
+padding: 5px 0 10px;
+width: 98%;
+margin: 0 auto;
+}
+.not-logged-in #footer-panels-wrapper .container .panel-display{
+	width: 90%;
+margin: 0 auto;
+	border: 5px solid #1af;
+	background: #acf;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px #1af inset;
+}
+.not-logged-in #footer-panels-wrapper .container .panel-display .row-1{width: 65%;
+padding: 5px;
+background: #fff;border-radius: 5px;margin: 10px 0px;}
+.not-logged-in #footer-panels-wrapper .container .panel-display .row-2{
+	width: 33%;
+	margin-left: 1px;
+	background: #fff;
+	border-radius: 5px;
+	float: right;
+	margin: 10px 0px;
+}
+.summary-quick-tabs{
+    width: 22%;  
+    height: 80px;  float: left;
+    text-align: center;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    background: rgb(234, 250, 252);
+}
+.not-logged-in #footer-panels-wrapper .container .panel-display .row-2 .region{ width:100%;}
+.not-logged-in .four-4x25 > .row-1 > .region{border-left: 1px solid saddlebrown; margin-left:0.5%; width:49%;}
+.not-logged-in .four-4x25 > .row-1 > .region-four-first{border-left:none !important}
+.page-taxonomy-term th, thead, thead th {
+	background: url(images/unhcr_header_back.jpg) 0px 0px repeat-x;
+}
+.profile_personal_details {}
+.profile_personal_details .fieldset-wrapper{}
+.profile_personal_details .fieldset-wrapper #edit-field-user-firstname{}
+.profile_personal_details .fieldset-wrapper #edit-field-user-othernames{}
+.profile_personal_details .fieldset-wrapper #edit-account{}
+.welcome_wrapper .button{
+    width: 22%;
+    float: left;
+    background: #cff;
+    margin-right: 5px;
+    vertical-align: top;
+	padding:10px;
+	font-size:16px;
+	font-weight:700;
+	color:#000 !important;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:10px;
+}
+.section-aboutrsh .content-style:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.section-aboutrsh .content-style{
+	min-height:1080px;
+}
+.ds-2col-stacked > .group-right {
+float: left;
+width: 48%;
+margin-left: 2%;
+}
+.group-right .om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf{
+    float:none !important;
+    margin-bottom:10px;
+    height: 35px;
+}
+.group-right .om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf .om-link {
+
+
+
+
+    margin-left: 8px;
+    border-radius: 5px;  
+    padding: 0px 15px;  background: #4883da;  color: white;  border: 1px solid rgba(0,0,0,0.15);      font-size: 16px;  
+    transition: all 0.3s ease-out;  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.3), 0 0 4px 1px rgba(0,0,0,0.2);  text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.quicktabs_main.quicktabs-style-zen {
+	clear: both;
+/*height: 220px;*/
+border: 1px solid #ccf;
+border-top: 0px;
+margin-top: -10px;
+padding: 10px;
+border-radius: 8px;
+margin-right: -4px;
+}
+.ds-2col-stacked .group-header .group-left{
+    width: 50%;
+
+    float: left;
+}
+.not-logged-in .ds-2col-stacked .group-header .group-left{
+    width: 99%;
+
+    float: left;
+}
+.panel-row.row-2 .panel-pane {
+	background: transparent;
+border: 1px solid #dadada;
+margin: 10px 0;
+padding: 10px;
+position: relative;
+}
+.panel-row.row-2 .panel-pane td{
+	padding:0px;
+	text-align:justify;
+
+	}
+.region-two-brick-right-below{
+width:48% !important;
+margin-left:2%;
+float:right;
+}
+.region-two-brick-left-below{
+width:49% !important;
+}
+.group_project_details{
+	background: #fbfbfb;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #cce;
+}
+.ds-2col-stacked .group-header .group-right{
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+.group_home_block_left h2.block-title{
+	margin:7px 0;
+}
+.ds-2col-stacked .group-header .group-right .field-name-field-menus ul li a{
+    margin-left: 8px;  border-radius: 5px;  
+    padding: 3px 15px;  background: #4883da;  color: white;  border: 1px solid rgba(0,0,0,0.15);  font-size: 16px;  
+    font-weight: 700;
+    transition: all 0.3s ease-out;  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.3), 0 0 4px 1px rgba(0,0,0,0.2);  text-decoration: none;
+    
+    width: 100% !important;
+}
+.ds-2col-stacked > .group-header {height:auto !important;clear: both;display: inline-block;}
+.view-user-administration .view-content td.views-field-edit-node a{padding: 3px;
+background: #cef;
+border-radius: 8px;
+clear: both;
+
+
+margin-left: 5px;border: 1px solid rgba(0,0,0,0.15);}
+a[href$='.jpg'], a[href$='.gif'], a[href$='.png'], a[href$='.bmp'], a[href$='.jpeg'], a[href$='.svg'], a[href$='.eps'] { 
+	padding: 5px 20px 5px 0;
+	background: none;
+	
+	/* START MOSES EDIT 3 ** 2013-10-02 */
+	font-size: 14px;
+	color: #0066ff;
+	/* END MOSES EDIT 3 */
+}
+
+/*.group-left .group-project-summary{
+     width:70%;}
+*/
+.multipage-pane-wrapper .left1{
+float:left;
+width:45%;}
+
+.multipage-pane-wrapper .left2{
+float:right;
+width:45%;}
+
+/*
+.page-node-add .form-item label{*/
+/*font-weight: 400;*//*
+float: left;
+padding-right: 5px;
+font-style:bold;
+}*/
+
+.page-node-add .form-type-textfield label{
+    float:left;
+    padding-right:7px;
+}
+
+.page-node-add .field-prefix{
+float:left;
+padding-right:5px;
+}
+
+h1#page-title{margin-bottom:10px;}
+div.panel-row.row-1.clearfix{margin-top:5px;
+
+/*------- MINE --------*/}
+/*
+div.views-exposed-widgets.clearfix{
+background:white;
+}*/
+
+.section-catalogue span.field-label{
+    font-size:20px;
+    color: #4883da;
+}
+
+.field-name-field-catalogue-download a{
+    font-size:18px;
+}
+.pane-projectmaponcatalog-panel-pane-1{
+margin-top:8px;
+}
+
+.boqback{
+background:blue;
+opacity:.7;
+}
+
+/* .page-node-19 div.group-header{
+    width:200px  !important;
+} */
+
+.page-node-19 div#content{
+    margin: 0 auto;
+}
+
+div.field .field-name-field-recent-projects-quick .field-type-blockreference{
+margin-top:50px;
+}
+
+.page-node-add-project .addprojectstep1 label{
+   width:120px;
+}
+
+.page-node-add-project .addprojectstep4 label{
+   width:120px;
+}
+
+
+
+.addprojectstep1 {
+background-color: #fbfbfb;
+border: 1px solid #dadada;
+padding: 10px;
+}
+
+.addprojectstep4 {
+background-color: #fbfbfb;
+border: 1px solid #dadada;
+padding: 10px;
+}
+
+div.block-content .userprofileview{
+padding-right: 15px;
+}
+
+.page-node-add-project .materialsstyle label{
+   width:160px;
+}
+
+
+
+.materialsstyle {
+background-color: #fbfbfb;
+border: 1px solid #dadada;
+padding: 10px;
+margin-top:15px;
+}
+
+.page-node-add .ckeditor_links{
+    display:none !important;
+    padding-bottom:10px;
+}
+
+.page-node-add .form-item label{
+    padding-top:10px;
+}
+
+.node-type-situation-report {
+}
+
+.node-type-situation-report h2.pane-title.block-title {
+    font-size: 1.1em;
+}
+.views-widget-filter-field_shelter_category_tid{
+	clear:both;
+
+	}
+.views-widget-filter-field_typology_tid label{width:20%; float:left;}
+.views-widget-filter-field_typology_tid .views-widget{width:80%; float:left}
+}
+/* 02012014*/
+form.ds-2col-stacked .ds-2col-stacked .field-type* {
+	display:inline-block;
+}
+form.ds-2col-stacked{
+	display:table;
+}
+form.ds-2col-stacked .group-header{
+	display:table-cell;
+}
+/*02012014*/
+/*16012014*/
+.olPopup{
+}
+.olPopup .olControlFeaturePopups_single{
+    width: 94% !important;
+    margin-top: 15px;
+    height: 290px !important;
+}
+.olPopup .openlayers-tooltip-name{
+	font-size:14px;
+	font-weight:bold;
+	
+}
+.olPopup .openlayers-tooltip-name a{
+
+color:#fff !important;
+}
+.olPopup .openlayers-tooltip-name a:hover{
+
+color:#4883da !important;
+}
+.olPopup .olPopupCloseBox{
+    right: -2px !important;
+    top: -1px !important;
+    zoom: 2;
+}
+.olPopup .openlayers-tooltip-description{
+    position: relative !important;
+    display: table;
+}
+.olPopup .openlayers-tooltip-description .field{
+    width: auto;
+    float: left;
+}
+.olPopup .openlayers-tooltip-description h2{
+    font-size: 16px;
+    width: auto;
+    float: left;
+    margin-top: 1px;
+    clear: both;
+    margin-bottom: 1px;
+    margin-right: 8px;
+}
+.olPopup .openlayers-tooltip-description .field-type-image .field-items{
+	display:table;
+	width: 99%;
+	height: 50px;
+	background: #fff;
+	padding: 1px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.olPopup .openlayers-tooltip-description .field-type-image .field-items .field-item img{
+	width: 80px !important;
+	height: 60px;
+}
+.olPopup .openlayers-tooltip-description .field-type-image .field-items .field-item{
+	display: table-cell !important;
+	width: 47% !important;
+	float:left;
+	margin-right: 5px;
+}
+/*16012014*/

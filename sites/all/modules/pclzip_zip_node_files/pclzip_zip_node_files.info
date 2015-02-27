@@ -1,0 +1,12 @@
+name = PclZip Zip Node Files
+description = Gives the ability to zip the files contained in a node
+dependencies[] = pclzip
+package = PclZip
+core = 7.x
+
+; Information added by drupal.org packaging script on 2012-05-24
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "pclzip_zip_node_files"
+datestamp = "1337819648"
+

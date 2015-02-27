@@ -1,0 +1,35 @@
+Zpanel Tests
+
+Passed | Test Description
+
+[  ] | Add Domain
+[  ] | Add Mailbox
+[  ] | Login to Roundcube
+[  ] | Send Email (confirm success)
+[  ] | Reieve email (confirm success)
+[  ] | Add Filter in Roundcube
+[  ] | Test filter in Roundcube
+[  ] | Check default files are created e.g Inbox Drafts Sent Deleted etc in Roundcube
+[  ] | Confirm Disk usage shown when hovering over bar in Roundcube
+[  ] | Confirm Quota rejection email when mailbox is full
+
+
+[  ] | Test email aliases
+[  ] | Test email distribution lists
+[  ] | Test email forwarders
+
+[  ] | The below all go live automatically by the cronjob
+[  ] | The below all go live when cron run though apache manually
+[  ] | Test domain website
+[  ] | Test Subdomain website
+[  ] | Test parked domain website
+[  ] | Test webalizer generation
+
+[  ] | Confirm DNS works
+[  ] | Confirm FTP works
+[  ] | Test FTP and Apache file permissions working together
+[  ] | Confirm cron jobs are working correctly
+[  ] | Cron can write to a file in public_html
+
+
+Other Tests Performed

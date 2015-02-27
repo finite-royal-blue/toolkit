@@ -1,0 +1,212 @@
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+#branding {
+  padding: 0px;
+}
+.region-header {
+  padding: 0 0 10px;
+}
+#branding hgroup {
+  margin-top: 1em;
+}
+#branding,
+.region-header {
+  float: none;
+  margin: auto;
+  text-align: center;
+  display: table;
+}
+.with-logo #site-name,
+.with-logo #site-slogan {
+  text-align: left;
+}
+#site-name {
+  font-size: 3em;
+}
+.content-style {
+  padding: 10px;
+}
+#secondary-content-wrapper,
+#top-panels-wrapper,
+#content-wrapper,
+#footer-panels-wrapper,
+#tertiary-content-wrapper {
+  margin-bottom: 10px;
+  max-width: 480px;
+}
+#footer-wrapper{
+  width:54%;
+  float:right;
+  margin-top:-275px
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+#menu-bar .block > ul > li {
+  margin: 0 1px 1px 0;
+}
+#menu-bar-wrapper .nav .block-menu li a,
+#menu-bar-wrapper #menu-bar li.sf-depth-1,
+#menu-bar-wrapper #menu-bar li.sf-depth-1 > a,
+#menu-bar-wrapper .region-header .block-content > ul > li > a {
+  border-radius: 6px 6px 6px 0;
+}
+.region-header .block {
+  overflow: hidden;
+}
+.region-header .block ul li {
+  display: block;
+  text-align: center;
+  float: none;
+}
+.region-header .block ul li a {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.article-title {
+  font-size: 1.5em;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{}
+#header-wrapper .container{background-image: url('images/header_bg.png');}
+/*Miami responsive css*/
+#authorize {
+height: 20px;
+background: #fff;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+.authorize {
+width: 199px;
+position: absolute;
+z-index: 100;
+margin-left: 20%;
+margin-top: -32px;
+}
+.logout_register {
+float: right;
+width: 90px;
+float: left;
+width: 105px;
+background: rgb(5,105,155);
+z-index: 10;
+border-bottom-left-radius: 10px;
+border: 1px solid #fff;
+margin-top: -3px;
+text-align: center;
+font-weight: bolder;
+}
+.authorize ul {
+list-style-type: none;
+margin: 0;
+}
+.user_signin {
+float: right;
+width: 90px;
+background: rgb(5,105,155);
+border-bottom-right-radius: 10px;
+border: 1px solid #fff;
+margin-top: -3px;
+text-align: center;
+font-weight: bolder;
+}
+.authorize ul li a { color:#fff; font-size: 85%;}
+.block h2, h2 {
+color: #4883da;
+font-size: 90%;
+}
+.not-logged-in .field .field-items .page_title, .not-logged-in .group-header .field-name-title .field-items .field-item {
+width: 0px !important;
+height: 1px !important;
+overflow: hidden;
+}
+.ds-2col-stacked > .group-header {
+width: 99%;
+text-align: justify;
+max-width: 480px;
+}
+.region-sidebar-first{
+  width: 45% !important;
+  margin-right:0px;
+  margin-left: 0px !important;
+}
+.block-quicktabs .block-inner{
+  margin-left:0px;
+  margin-right:0px;
+}
+ul.quicktabs-tabs.quicktabs-style-zen{
+  margin:0px;
+}
+.region-sidebar-first #block-user-login ul li{
+  margin-left:0px !important;
+}
+.region-sidebar-first a{
+  font-size:85%
+}
+.region-sidebar-first label{
+  font-size:85%
+}
+.region-sidebar-first input{
+  font-size:85%
+}
+.ds-2col-stacked > .group-header p, .ds-2col-stacked > .group-header span, .ds-2col-stacked > .group-header a {
+  font-size:85%
+}
+#quicktabs-container-logged_out_front_page {
+min-height: 150px;
+display: block;
+border-top: 1px solid #e1e1e1;
+border-bottom: 1px solid #e1e1e1;
+border-right: 1px solid #e1e1e1;
+padding-bottom: 10px;
+margin-left: 1px;
+padding: 8px;
+border-left: 1px solid #e1e1e1;
+}
+#quicktabs-logged_out_front_page ul li a{
+  font-size:85% !important
+;
+  font-weight: normal;
+  padding: 2px 5px 0px 4px;
+}
+ul.quicktabs-tabs.quicktabs-style-zen li {
+float: left;
+margin: 0 2px;
+}
+.region-footer .region-inner section.block-7 {
+width: 99%;
+clear: both;
+display: block;
+margin-left: 0px;
+margin-bottom: 0px;
+padding-top: 5px;
+}
+.region-footer .region-inner section.block-7 ul{
+  list-style:none;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+.region-footer .region-inner section#block-menu-menu-footer-menu, .region-footer .region-inner #block-menu-menu-footer-menu {
+clear: both;
+display: block;
+margin-bottom: 0px;
+}
+.region-footer .region-inner{
+  border:1px solid #e1e1e1;
+  margin-left:3%;
+  width:94%;
+  height:auto
+}
+#footer-wrapper div.block-inner.clearfix {
+height: auto;
+}
+#content-column{
+ max-width:480px;
+ min-width: 380px; 
+}

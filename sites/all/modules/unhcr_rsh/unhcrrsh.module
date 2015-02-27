@@ -1,0 +1,20 @@
+<?php
+/*
+ * Module Swims Import*
+ * swimsimport*
+ * Created march 2014*
+ * License Proprietary*
+ * Owner Miami Kelvin*
+ * Publishe Miami Kelvin*
+ */
+ /*
+  * implements hook_node_insert($node)
+  */
+ require_once ( dirname(__FILE__) . '/includes/functions.php');
+
+function unhcrrsh_form_alter(&$form, &$form_state, $form_id){
+	
+}
+function unhcrrsh_init(){
+#	drupal_add_js(drupal_get_path('module', 'unhcrrsh') .'/unchr_rsh_page.js');
+}

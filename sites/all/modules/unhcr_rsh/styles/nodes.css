@@ -1,0 +1,133 @@
+@CHARSET "ISO-8859-1";
+.dscColapsed{
+	display:none;
+}
+label{
+	width:auto;
+}
+.helpbox{
+	width: auto;
+	float: right;
+	
+	
+}
+.helpbox:after{
+
+}
+label{
+	width:auto !important;
+}
+.form-item{
+	clear: both;
+}
+
+.field-name-field-project-type-form{
+	width:30%;
+	float:left;
+}
+#node_project_form_group_basic_info_b .field-type-taxonomy-term-reference-form, #node_project_form_group_materials .field-type-taxonomy-term-reference-form{
+	width:30%;
+	float:left;
+	background:#ffffff;
+	margin-left:0.6%;
+	margin-right:0.6%;
+	padding: 8px;
+}
+#node_project_form_group_basic_info_b .field-group-format{
+	clear: both;
+	width: 100%;
+	padding:0px;
+	margin:0px;
+}
+.text-format-wrapper .form-type-textarea{
+	width: 60%;
+	float: left;
+	margin-right: 1%;
+}
+.multipage-pane-wrapper{
+display:inline-block;
+}
+ul.vertical-tabs-list{
+display:none !important;
+}
+div.vertical-tabs-panes.vertical-tabs-processed{
+display:none !important;
+}
+.multipage-controls-list{
+    background: #4883da;
+    padding-left: 2px;
+    border-radius: 10px;
+}
+span.multipage-counter{
+	background: #fff;
+	display: block;
+	border: 1px solid #fff;
+	height: 24px;
+	margin-bottom: -11px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 4px;
+	border-radius: 8px;
+	border: 1px double #ccf;
+	margin-right: 2px;
+}
+span.multipage-counter em{
+    background: #fff;
+}
+.multipage-controls-list span.multipage-button{
+margin-bottom:0px;
+}
+.text-format-wrapper .description{
+	width: 37%;
+	float: left;
+	margin-top:40px;
+	height: 136px;
+	overflow: hidden;
+}
+.click-more{
+	
+}
+.multipage-controls-list input.form-submit {
+font: 1em normal Arial, Helvetica, sans-serif;
+}
+#node_project_form_group_basic_info_b .field-type-taxonomy-term-reference-form .form-item, #node_project_form_group_materials .field-type-taxonomy-term-reference-form .form-item{
+	margin-top:0px;
+	margin-bottom:0px;
+	
+}
+.field-name-field-project-country-form{
+    width: 45%;
+    float: left;
+}
+.field-name-field-project-country-form label{
+    width: auto;
+    float: left;
+	margin-right:10px;
+}
+#edit-field-project-country-und{
+	margin-top:10px;
+}
+.field-name-field-location-form{
+    width: 45%;
+    float: left;
+}
+.page-node-add-wash-infrastructure .field-name-field-location-form .form-type-textfield label{
+	margin-top:0px;
+	padding-top:0px;
+}
+.field-name-field-my-coordinates-form{
+	clear:both;
+	
+}
+#node_project_form_group_basic_info_b .field-type-taxonomy-term-reference-form .form-item label, #node_project_form_group_materials .field-type-taxonomy-term-reference-form .form-item label{
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top: 0px;
+}
+#node_project_form_group_basic_info_b .field-type-taxonomy-term-reference-form .form-item select, #node_project_form_group_materials .field-type-taxonomy-term-reference-form .form-item select{
+	width: 100%;
+}
+#node_project_form_group_basic_info_b .field-type-taxonomy-term-reference-form, #node_project_form_group_materials .field-type-taxonomy-term-reference-form{
+	padding-top: 0px;
+	padding-bottom:0px;
+}

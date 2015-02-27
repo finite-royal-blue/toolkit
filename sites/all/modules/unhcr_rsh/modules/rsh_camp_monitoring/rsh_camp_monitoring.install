@@ -1,0 +1,307 @@
+<?php
+/**
+ * Implements hook_install().
+ */
+function rsh_camp_monitoring_install() {
+    node_types_rebuild();
+    $types = node_type_get_types();
+      node_add_body_field($types['campmonitoring']); 
+	  add_custom_fields();
+}
+/**
+ * Implements hook_uninstall().
+ */
+function rsh_camp_monitoring_uninstall() {
+    $ournewtype = 'campmonitoring';
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+    $result = db_query($sql, array(':type' => $ournewtype));
+    $nodeids = array();
+    foreach ($result as $row) {
+        $nodeids[] = $row->nid;
+    }
+    node_delete_multiple($nodeids);
+    delete_custom_fields();
+    node_type_delete($ournewtype);
+    field_purge_batch(500);
+}
+ 
+function delete_custom_fields() {
+    foreach (array_keys(_rsh_camp_monitoring_installed_fields()) as $field) {
+        field_delete_field($field);
+    }
+    $instances = field_info_instances('node', 'campmonitoring');
+    foreach ($instances as $instance_name => $fieldinstance) {
+        field_delete_instance($fieldinstance);
+    }
+}
+function _rsh_camp_monitoring_installed_fields() {
+    $t = get_t();
+    return array(
+        'rsh_camp_monitoring_loc_name' => array(
+            'field_name' => 'rsh_camp_monitoring_loc_name',
+            'label' => $t('Locality name'),
+            'type' => 'text'
+        ),
+        'rsh_camp_monitoring_surface' => array(
+            'field_name' => 'rsh_camp_monitoring_surface',
+            'label' => $t('Camp surface'),
+            'type' => 'number_integer'
+        ),
+		  'rsh_camp_monitoring_occup' => array(
+            'field_name' => 'rsh_camp_monitoring_occup',
+            'label' => $t('Current occupancy'),
+            'type' => 'number_integer'
+        ),
+		'camp_est_year' => array(
+		    'field_name' => 'camp_est_year',
+			'type' => 'datetime',
+			'label' => $t('Camp established year'),
+			'module' => 'date',
+			  'active' => '1',
+			  'locked' => '0',
+			  'cardinality' => '1',
+			  'deleted' => '0',
+			  'columns' => array(
+				'value' => array(
+				  'type' => 'datetime',
+				  'mysql_type' => 'datetime',
+				  'pgsql_type' => 'timestamp without time zone',
+				  'sqlite_type' => 'varchar',
+				  'sqlsrv_type' => 'smalldatetime',
+				  'not null' => FALSE,
+				  'sortable' => TRUE,
+				  'views' => TRUE,
+				),
+			  )
+			),
+		'rsh_camp_monitoring_capcty' => array(
+            'field_name' => 'rsh_camp_monitoring_capcty',
+            'label' => $t('Estimated capacity'),
+            'type' => 'number_integer'
+        ),
+		'rsh_camp_monitoring_avghlpp' => array(
+            'field_name' => 'rsh_camp_monitoring_avghlpp',
+            'label' => $t('Average habitable land per person'),
+            'type' => 'number_integer'
+        ),
+		'rsh_camp_monitoring_alt' => array(
+            'field_name' => 'rsh_camp_monitoring_alt',
+            'label' => $t('Altitude'),
+            'type' => 'number_integer'
+        ),
+		'rsh_camp_monitoring_dist_t' => array(
+            'field_name' => 'rsh_camp_monitoring_dist_t',
+            'label' => $t('Locality type'),
+            'type' => 'taxonomy_term_reference',
+			'default_widget' => 'options_select',
+			'default_formatter' => 'taxonomy_term_reference_link',
+			'settings' => array(
+				'allowed_values' => array(
+				array(
+				'vocabulary' => 'locality',
+				'parent' => '0',
+				  ),
+				),
+			),
+        ),
+		
+    );
+}
+ 
+function _rsh_camp_monitoring_installed_instances() {
+    $t = get_t();
+    return array(
+        'rsh_camp_monitoring_loc_name' => array(
+            'field_name' => 'rsh_camp_monitoring_loc_name',
+            'type' => 'text',
+            'label' => $t('Locality name'),
+            'widget' => array(
+                'type' => 'text_textfield'
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Locality name'),
+                    'type' => 'text'
+                )
+            )
+        ),
+        'rsh_camp_monitoring_surface' => array(
+            'field_name' => 'rsh_camp_monitoring_surface',
+            'type' => 'number_integer',
+            'label' => $t('Camp surface'),
+            'widget' => array(
+                'type' => 'text_textfield',
+				'settings' => array(
+				  'min' => '',
+				  'max' => '',
+				  'prefix' => '',
+				  'suffix' => 'ha',
+				  'user_register_form' => FALSE,
+			)
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Camp surface'),
+                    'type' => 'text',
+					 'prefix_suffix' => TRUE
+                )
+            ),
+			 
+        ),
+		
+		'rsh_camp_monitoring_occup' => array(
+            'field_name' => 'rsh_camp_monitoring_occup',
+            'type' => 'number_integer',
+            'label' => $t('Current occupancy'),
+            'widget' => array(
+                'type' => 'text_textfield',
+				'settings' => array(
+				  'min' => '',
+				  'max' => '',
+				  'prefix' => '',
+				  'suffix' => 'Beneficiaries',
+				  'user_register_form' => FALSE,
+			)
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Current occupancy'),
+                    'type' => 'text',
+					 'prefix_suffix' => TRUE
+                )
+            ),
+			 
+        ),
+		
+		'camp_est_year' => array(
+		'field_name' => 'camp_est_year',
+		'type' => 'datetime',
+		'label' => 'Camp established year',
+        'widget' => array(
+          'weight' => '54',
+          'type' => 'date_select',
+          'module' => 'date',
+          'active' => 1,
+          'settings' => array(
+            'input_format' => 'm/d/Y - H:i:s',
+            'input_format_custom' => '',
+            'year_range' => '-10:+3',
+            'increment' => '15',
+            'label_position' => 'none',
+            'text_parts' => array(),
+				),
+			),
+		'display' => array(
+			  'example_node_list' => array(
+				'label' => 'inline',
+				'type' => 'date_default',
+				'weight' => '10',
+				'settings' => array(
+				  'format_type' => 'long',
+				  'multiple_number' => '',
+				  'multiple_from' => '',
+				  'multiple_to' => '',
+				  'fromto' => 'both',
+				),
+				'module' => 'date',
+			  )
+		)
+	),
+		'rsh_camp_monitoring_capcty' => array(
+            'field_name' => 'rsh_camp_monitoring_capcty',
+            'type' => 'number_integer',
+            'label' => $t('Estimated capacity'),
+            'widget' => array(
+                'type' => 'text_textfield',
+				'settings' => array(
+				  'min' => '',
+				  'max' => '',
+				  'prefix' => '',
+				  'suffix' => 'ha',
+				  'user_register_form' => FALSE,
+			)
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Estimated capacity'),
+                    'type' => 'text',
+					 'prefix_suffix' => TRUE
+                )
+            ),
+			 
+        ),
+		'rsh_camp_monitoring_avghlpp' => array(
+            'field_name' => 'rsh_camp_monitoring_avghlpp',
+            'type' => 'number_integer',
+            'label' => $t('Average habitable land per person'),
+            'widget' => array(
+                'type' => 'text_textfield',
+				'settings' => array(
+				  'min' => '',
+				  'max' => '',
+				  'prefix' => '',
+				  'suffix' => 'ha',
+				  'user_register_form' => FALSE,
+			)
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Average habitable land per person'),
+                    'type' => 'text',
+					 'prefix_suffix' => TRUE
+                )
+            ),
+			 
+        ),
+		'rsh_camp_monitoring_alt' => array(
+            'field_name' => 'rsh_camp_monitoring_alt',
+            'type' => 'number_integer',
+            'label' => $t('Altitude'),
+            'widget' => array(
+                'type' => 'text_textfield',
+				'settings' => array(
+				  'min' => '',
+				  'max' => '',
+				  'prefix' => '',
+				  'suffix' => 'ha',
+				  'user_register_form' => FALSE,
+			)
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Altitude'),
+                    'type' => 'text',
+					 'prefix_suffix' => TRUE
+                )
+            ),
+			 
+        ),
+		'rsh_camp_monitoring_dist_t' => array(
+            'field_name' => 'rsh_camp_monitoring_dist_t',
+            'type' => 'taxonomy_term_reference',
+            'label' => $t('Locality type'),
+            'widget' => array(
+                'type' => 'taxonomy_term_reference',
+			),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Locality type'),
+                    'type' => 'taxonomy_term_reference_link'
+                )
+            ),
+			 
+        ),
+	);
+}
+
+function add_custom_fields() {
+    foreach (_rsh_camp_monitoring_installed_fields() as $field) {
+        field_create_field($field);
+    }
+    foreach (_rsh_camp_monitoring_installed_instances() as $fieldinstance) {
+        $fieldinstance['entity_type'] = 'node';
+        $fieldinstance['bundle'] = 'campmonitoring';
+        print_r($fieldinstance);
+        field_create_instance($fieldinstance);
+    }
+}

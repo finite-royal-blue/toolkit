@@ -1,0 +1,7 @@
+name = UNHCR RSH API
+description = Provides UNHCR RSH Specific functionality.
+package = UNHCR
+core = 7.x
+version = "7.x-1.x-dev"
+files[] = unhcr.features.inc
+configure = admin/config/unhcr/api

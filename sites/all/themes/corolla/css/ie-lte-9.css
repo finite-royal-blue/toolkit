@@ -1,0 +1,43 @@
+/* Corolla < IE9 */
+#branding * {
+  display: block;
+}
+#branding,
+#logo,
+#branding hgroup {
+  float: left;
+}
+.site-name-hidden #branding hgroup {
+  clear: left;
+}
+.article .user-picture {
+  width: 50px;
+  margin-right: 15px;
+}
+.block input.form-text,
+.block input.form-password,
+.block input.form-file {
+  width: 95%;
+}
+th,td {padding: 10px 14px;}
+td.side_title{
+	padding: 5px 5px;
+}
+#edit-submit {
+margin-top: 10px;
+border:0px;
+padding-top:0px;
+padding-bottom:0px;
+}
+#block-user-login .form-item-name label{
+width:145px !important;
+}
+#block-user-login .form-item-pass label{
+width:145px !important;
+}
+#footer-wrapper div.block-inner.clearfix {
+height: 200px;
+}
+.region-footer .region-inner #block-menu-menu-footer-menu{
+height:200px;
+}

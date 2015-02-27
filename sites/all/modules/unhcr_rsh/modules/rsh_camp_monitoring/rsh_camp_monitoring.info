@@ -1,0 +1,8 @@
+name = UNHCR Camp Monitoring form
+description = API For submitting visualization and export/import of UNHCR RSH camp monitoring form.
+package = UNHCR
+core = 7.x
+version = "7.x-1.x-dev"
+configure = admin/config/unhcr/monitoring/camp/
+files[] = rsh_camp_monitoring.install
+files[] = rsh_camp_monitoring.module

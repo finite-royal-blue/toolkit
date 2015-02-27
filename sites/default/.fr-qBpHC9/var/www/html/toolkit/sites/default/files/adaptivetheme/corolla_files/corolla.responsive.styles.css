@@ -1,0 +1,492 @@
+@media only screen and (max-width:320px) {
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+
+#branding {
+  padding: 10px 0 10px;
+}
+.region-header {
+  padding: 0 0 10px;
+}
+#branding,
+.region-header {
+  float: none;
+  margin: auto;
+  text-align: center;
+  display: table;
+}
+#logo,
+#site-name,
+#site-slogan {
+  display: block;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#site-name {
+  font-size: 3em;
+}
+.content-style {
+  padding: 10px;
+}
+#secondary-content-wrapper,
+#top-panels-wrapper,
+#content-wrapper,
+#footer-panels-wrapper,
+#tertiary-content-wrapper {
+  margin-bottom: 10px;
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#menu-bar .block > ul > li {
+  display: inline-block;
+  margin: 0.333em 0.1em;
+  padding-left: 0;
+}
+.rct-6 #menu-bar .menu-wrapper ul li  a, 
+.rct-6 .region-header .block-content ul li a {
+  border-radius: 6px 6px 6px 6px;
+}
+#menu-bar ul > li a {
+  padding: 0.4em 10px 0.5em;
+  margin: 0 3px;
+}
+
+.region-header .block {
+  overflow: hidden;
+}
+.region-header .block ul li {
+  display: block;
+  text-align: center;
+  float: none;
+}
+.region-header .block ul li a {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.article-title {
+  font-size: 1.5em;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{}
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+#branding {
+  padding: 15px 0 0 0;
+}
+.region-header {
+  padding: 0 0 10px;
+}
+#branding hgroup {
+  margin-top: 1em;
+}
+#branding,
+.region-header {
+  float: none;
+  margin: auto;
+  text-align: center;
+  display: table;
+}
+.with-logo #site-name,
+.with-logo #site-slogan {
+  text-align: left;
+}
+#site-name {
+  font-size: 3em;
+}
+.content-style {
+  padding: 10px;
+}
+#secondary-content-wrapper,
+#top-panels-wrapper,
+#content-wrapper,
+#footer-panels-wrapper,
+#tertiary-content-wrapper {
+  margin-bottom: 10px;
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+#menu-bar .block > ul > li {
+  margin: 0 1px 1px 0;
+}
+#menu-bar-wrapper .nav .block-menu li a,
+#menu-bar-wrapper #menu-bar li.sf-depth-1,
+#menu-bar-wrapper #menu-bar li.sf-depth-1 > a,
+#menu-bar-wrapper .region-header .block-content > ul > li > a {
+  border-radius: 6px 6px 6px 0;
+}
+.region-header .block {
+  overflow: hidden;
+}
+.region-header .block ul li {
+  display: block;
+  text-align: center;
+  float: none;
+}
+.region-header .block ul li a {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.article-title {
+  font-size: 1.5em;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{}
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+#header-wrapper {
+  float: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+#branding {
+  padding: 15px 0 0 0;
+}
+.region-header {
+  padding: 0 0 10px;
+}
+#branding hgroup {
+  margin-top: 0.8em;
+}
+#branding,
+.region-header {
+  float: none;
+  text-align: center;
+  display: table;
+}
+#site-name,
+#site-slogan {
+  text-align: left;
+}
+#site-name {
+  font-size: 3.5em;
+}
+.content-style {
+  padding: 12px 15px;
+}
+#secondary-content-wrapper,
+#top-panels-wrapper,
+#content-wrapper,
+#footer-panels-wrapper,
+#tertiary-content-wrapper {
+  margin-bottom: 10px;
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+#menu-bar .block > ul > li {
+  margin: 0 1px 1px 0;
+}
+#menu-bar-wrapper .nav .block-menu li a,
+#menu-bar-wrapper #menu-bar li.sf-depth-1,
+#menu-bar-wrapper #menu-bar li.sf-depth-1 > a,
+#menu-bar-wrapper .region-header .block-content > ul > li > a {
+  border-radius: 6px 6px 6px 0;
+}
+.region-header .block {
+  overflow: hidden;
+}
+.region-header .block ul li {
+  display: block;
+  text-align: center;
+  float: none;
+}
+.region-header .block ul li a {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{}
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+#branding,
+.region-header  {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+#branding hgroup {
+  margin-top: 0.8em;
+}
+#site-name {
+  font-size: 3.5em;
+}
+.region-secondary-content .block {
+  margin-bottom: 0;
+  font-size: 1.077em;
+}
+
+/*Introducing custom RSH work from this point*/
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{
+    height: 75px;
+}
+#menu-bar-wrapper .container{
+   height:75px;
+}
+}
+@media only screen and (min-width:1025px) {
+/**
+ * Do not delete or rename this file, if you do not use it leave it blank.
+ */
+th,td {
+  padding: 10px 14px;
+}
+
+/*Wrapper for the menu bar*/
+#menu-bar-wrapper{
+   height:45px;
+   
+}
+#menu-bar-wrapper .container{
+    height:45px;
+    background: #0066A4;
+}
+#menu-bar{
+    /*shift the menu bar to cater for the background serving as the logo*/
+    position:absolute;
+    height: 40px;
+    top: 0;
+    padding: 0;
+}
+.toolkit_logo_block{}
+
+/*some added css styling */
+/*maps*/
+#popup #popup_FrameDecorationDiv_0{
+	-o-border-top-left-radius:10px;
+	-moz-border-top-left-radius:10px;
+	-ms-border-top-left-radius:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_1{
+	-o-border-top-right-radius:10px;
+	-moz-border-top-right-radius:10px;
+	-ms-border-top-right-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_3{
+	-moz-border-bottom-right-radius: 10px;
+	-ms-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-o-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: 0.1px solid #cff;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_2{
+	-moz-border-bottom-left-radius: 10px;
+	-ms-border-bottom-left-radius: 10px;
+	-o-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	
+	border-bottom: 0.1px solid #cff;
+	background:#0066A4;}
+#popup #popup_FrameDecorationDiv_4{}
+#popup #popup_contentDiv{
+	background:#FFF;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;}
+
+/*end maps*/
+.toolkit_projects_content_top .field-type-image{float:left;}
+.toolkit_projects_content_top .field-type-postgis{float:left; margin-left:10px;}
+.toolkit_projects_content_top .group-project-summary-display{float:left; margin-left:10px;}
+.toolkit_projects_content_top .field-type-file{float:right; margin-left:10px; clear:both}
+
+
+
+/* end custom css and styling */
+/*Branding*/
+#branding{
+    padding: 5px 0 0 0;
+}
+
+/*Work on the Blocks*/
+.toolkit_menu{
+    /*This is the block containing the main menu implemented using OM Maximenu*/
+    position: absolute;
+    border-left: 1px solid white;
+    left: 210px;
+    top: 2px;
+    width: 720px;
+}
+
+/*OM Maximenu-Overrides and customisation*/
+#om-maximenu-main-menu{}
+#om-menu-main-menu-ul-wrapper{}
+#om-menu-main-menu{}
+.om-maximenu.om-maximenu-block ul.om-menu li.om-leaf .om-link {
+    float: left;
+    color: white;
+}
+
+/*The menu bar also display login and logout links for the user*/
+#authorize{
+    height: 20px;
+}
+.authorize{}
+.authorize ul{
+    list-style-type: none;
+    margin: 0;
+}
+.authorize ul li a{
+    color: white;
+}
+.user_signin{
+    float: right;
+    width: 15%;
+}
+.logout_register{
+    float: right;
+    width: 10%;
+}
+
+/*Customise the user registration page.This is still a development feature.Not complete*/
+.page-user-register .container .tabs{
+    display:none;
+}
+.page-user-register .container .content-style{}
+.page-user-register .container .content-style #page-title{
+    text-align: left;
+    color: #0066A4;
+}
+.page-user-register #content{}
+
+/*
+Customise the user login page. This is the less complex approach but not the bes. Works until the best is conceived.
+    -strip the taskbars
+    -center the login form
+*/
+/*.page-user-login .tabs{display:block;}*/
+
+/*
+    A User Dashboard. 
+    Opted not to use panels or Homebox for the sake of responsive design
+*/
+.page-dashboard{}
+.page-dashboard .content-style{
+    min-height: 0px;
+    padding: 0;
+    background-color: white;
+    border: 0;
+}
+
+.dashboard_content_menu{}
+
+/*Administrative dashboard*/
+.page-tools{}
+.page-tools .content-style{
+    min-height: 0px;
+    padding: 0;
+    background-color: white;
+    border: 0;
+}
+
+/************************************************FORMS***********************************************************/
+/**project creation form**/
+#project-node-form{}
+
+/*Styling for the projects Landing Page*/
+.page-projects .content-margin{
+    margin: 0;
+}
+.page-projects .content-style{
+    border: none;
+    padding: 5px;
+}
+.page-projects #page-title{
+    display: none;
+}
+.add_project{
+    width: 20%;
+    float: left;
+}
+#block-views-project-types-block-1{
+    width: 30%;
+    float: left;
+}
+.page-projects .block{
+    clear: none;
+}
+.latest_projects_custom{
+    width: 40%;
+    float: left;
+}
+.add_project,.latest_projects_custom,#block-views-project-types-block-1{
+    border: 1px solid #e1e1e1;
+    margin-right: 10px;
+    padding: 10px;
+    min-height: 200px;
+}
+
+/*Footer menu-The menu appearing at every web page foot*/
+.footer_menu{
+    height: 20px;
+}
+.footer_menu ul.menu{
+
+}
+ul li.leaf{
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.footer_menu ul.menu li{
+    width: 110px;
+    height: 20px;
+    float: right;
+}
+.region-footer{
+    border-top: 1px solid #e1e1e1;
+}
+
+/*Handle the local tasks*/
+#tasks{
+	display:none;
+}
+.local_tasks{
+}
+.local_tasks ul.primary li{
+	display:block;
+	margin-bottom:5px;
+}
+.local_tasks ul.primary li a{
+	display:block;
+	border-radius:0;
+}
+
+}

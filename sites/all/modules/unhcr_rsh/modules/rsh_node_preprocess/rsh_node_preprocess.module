@@ -1,0 +1,175 @@
+<?php
+/*
+ * UNHCR Node Pre-Process*
+ * swimsimport*
+ * Created april 2014*
+ * License Proprietary*
+ * Owner Miami Kelvin*
+ * Publisher Miami Kelvin*
+ */
+ /*
+  * implements hook_node_insert($node)
+  */
+# require_once ( dirname(__FILE__) . '/includes/functions.php');
+
+/**
+ * Implements hook_form_alter().
+ */
+function rsh_node_preprocess_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_login' ||$form_id == 'user_login_block') {
+    array_unshift($form['#validate'],'rsh_node_preprocess_user_login_form_validate');
+    $form['#attached']['css']['rsh_node'] = drupal_get_path('module', 'unhcrrsh') . '/styles/unhcr_login.css';
+  } 
+  
+//  krumo($form);
+}
+function rsh_node_preprocess_form_user_login_form_alter(&$form, &$form_state, $form_id) {
+}
+function rsh_node_preprocess_form_child_friendly_space_node_form_alter(&$form, &$form_state, $form_id) {
+	$form['#attached']['js'] = array();
+	$form['#attached']['js']['node_gen_js'] = drupal_get_path('module', 'unhcrrsh') . '/scripts/js/unhcr_node_gen.js';
+	$form['#attached']['js']['page_node_js'] = drupal_get_path('module', 'unhcrrsh') . '/scripts/js/pagenodes.js';
+	$form['#attached']['css']['rsh_node'] = drupal_get_path('module', 'unhcrrsh') . '/styles/nodes.css';
+	drupal_set_title(t('Add a Child Friendly Space'));
+	
+	//krumo($form);
+}
+
+function rsh_node_preprocess_form_wash_infrastructure_node_form_alter(&$form, &$form_state, $form_id) {
+	$form['#attached']['js'] = array();
+	$form['#attached']['js']['node_gen_js'] = drupal_get_path('module', 'unhcrrsh') . '/scripts/js/unhcr_node_gen.js';
+	$form['#attached']['js']['page_node_js'] = drupal_get_path('module', 'unhcrrsh') . '/scripts/js/pagenodes.js';
+	$form['#attached']['css']['rsh_node'] = drupal_get_path('module', 'unhcrrsh') . '/styles/nodes.css';
+	drupal_set_title(t('Add a wash infrastructure '));
+//krumo($form);
+}
+/* implements hook_node_alter */
+function rsh_node_preprocess_element_info_alter(&$type) {
+  $type['radios']['#process'][] = '_rsh_node_preprocess_remove_radio_na';
+}
+function _rsh_node_preprocess_remove_radio_na($element) {
+  unset($element['#options']['_none']);
+  unset($element['_none']);
+  return $element;
+}
+
+
+function rsh_node_preprocess_page_alter(&$page) {
+  if (arg(0) == 'node' && is_numeric(arg(1)))
+  {
+  	$nodeid = arg(1);
+  if ($page['content']['system_main']['nodes'][$nodeid]['#bundle'] == 'child_friendly_space') {
+		  $page['highlighted']['toolbox']= array(
+		  '#weight' => 5,
+		  '#markup' => '<div class="rsh_tools toolkit_toolbox tools link_box links_block"> 
+			<div class="tools">
+				<h3 class="tools_title">CFS Tools:</h3> 
+				<div class="tools_ul"> 
+					<ul>
+						<li class="tools_leaf"><a href="http://miami.com">humanitarian library</a></li>
+						<li class="tools_leaf"><a href="http://miami.com">shelter center</a></li>
+						<li class="tools_leaf"><a href="http://miami.com">practical action</a></li>
+					</ul>
+				</div>
+			</div>	
+				<div class="links">
+				<h3 class="links_title">CFS Links:</h3> 
+				<div class="links_ul"> 
+					<ul>
+						<li class="links_leaf"><a href="http://miami.com">urban good practices</a></li>
+					
+						<li class="links_leaf"><a href="http://miami.com">CFS Guidance</a></li>
+					</ul>
+				
+			</div>
+			</div>
+			</div>',
+ 		 ); 
+		}
+  } ;
+
+  if(arg(0) == 'projects'){
+	drupal_add_js(drupal_get_path('module', 'unhcrrsh') . '/scripts/js/pagemaps.js');
+    $variables['scripts'] = drupal_get_js();
+	//krumo($page);
+	}
+}
+function rsh_node_preprocess_entity_view_alter(&$build, $type){
+	//krumo($type);
+}
+
+function rsh_node_preprocess_node_info() {
+  return array(
+    'rsh_node' => array(
+      'name' => t('RSH Node'),
+      'base' => 'node',
+      'description' => t('Use for rsh node type'),
+    ),
+  );
+}
+function rsh_node_preprocess_user_login_form_validate(&$form, &$form_state) {
+  
+}
+function rsh_node_preprocess_form_project_node_form_alter(&$form, &$form_state, $form_id){
+	//krumo($form);
+	$proj = $form['field_project_type']['und']['#description'];
+	//$form['field_project_type']['und']['#description'] = "<div>" .t("altered") ."</div>";
+	$form['#attached']['js'] = array(
+  	drupal_get_path('module', 'unhcrrsh') . '/scripts/js/pagenodes.js'
+);
+$form['#attached']['css']['rsh_node'] = drupal_get_path('module', 'unhcrrsh') . '/styles/nodes.css';
+drupal_set_title(t('Add a shelter project'));
+	#krumo($form);
+	
+}
+/**
+ * Implements hook_form_alter().
+ */
+function rsh_node_preprocess_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_register_form') {
+    array_unshift($form['#validate'], 'rsh_node_preprocess_user_register_form_validate');
+	$form['#attached']['js'] = array(
+  	drupal_get_path('module', 'unhcrrsh') . '/scripts/js/unhcr_u_l_form.js'
+);
+
+    $form['terms'] = array(
+
+  '#type' => 'div',
+
+	);
+	 $form['terms_conditions'] = array(
+	
+	  '#type' => 'fieldset',
+	
+	  '#title' => t('Terms and Conditions'),
+	
+	  '#collapsible' => TRUE,
+	
+	
+	  '#group' => 'terms'
+	
+	);
+	  $form['terms_conditions']['rsh_node_preprocess'] = array(
+     '#type' => 'checkbox',
+     '#title' => t('I agree to the toolkit <a href="#">terms of use</a> and <a href="#">privacy policy</a>'),
+     '#description' => t('By checking this you agree to this toolkit\'s terms of use, and its privacy policy(ies).'),
+     '#attributes' => array('class' => array('miami terms-conditions radio'), 'id' => 'terms_check'),
+     '#return_value' => 1, 
+     '#default_value' => 0, 
+     
+    );
+	
+	// krumo($form);
+  }
+}
+
+/**
+ * Additional handler for user_register_form form validation.
+ */
+ 
+function rsh_node_preprocess_user_register_form_validate($form, &$form_state) {
+ /* if (!preg_match('/^.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$/', $form_state['values']['pass'])) {
+    form_set_error('pass', t('Password must be at least 10 characters and contain at least one lower case letter, one upper case letter, one digit and one special character.'));
+  }*/
+ // krumo($form['terms_conditions']['rsh_node_preprocess']['value'] );
+}

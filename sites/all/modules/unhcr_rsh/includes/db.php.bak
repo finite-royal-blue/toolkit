@@ -1,0 +1,124 @@
+<?php
+$username = "root";
+$password = "";
+$hostname = "localhost"; 
+
+//connection to the database
+$dbhandle = mysql_connect($hostname, $username, $password) 
+  or die("Unable to connect to MySQL");
+
+//select a database to work with
+$selected = mysql_select_db("sddr",$dbhandle) 
+  or die("Could not select examples");
+  //execute the SQL query and return records
+$result = mysql_query("SELECT * FROM tblberkad");
+//fetch tha data from the database
+$i = 1;
+while ($row = mysql_fetch_array($result)) {
+	/*$damid = $row['damid'];*/
+	$locationid = $row['locationid'];
+	$dmid = $row['dmid'];
+	/*$damcluster = $row['damcluster'];
+	$catchmentarea = $row['catchmentarea'];
+	$resevoircapacity = $row['resevoircapacity'];
+	$damdepth = $row['damdepth'];
+	$damlength = $row['damlength'];
+	$damwidth = $row['damwidth'];
+	$silttrap = $row['silttrap'];
+	$spillway = $row['spillway'];
+	$inflowchannel = $row['inflowchannel'];
+	$fencing = $row['fencing'];
+	$well = $row['well'];
+	$bundwallmaterial = $row['bundwallmaterial'];
+	$bundwallheight = $row['bundwallheight'];*/
+	/*echo $damid ."&nbsp;|&nbsp;" .$locationid ."&nbsp;|&nbsp;" .$dmid ."<br>";*/
+	$location = extend_locationid($locationid);
+	$dmdata = extend_dmid($dmid);
+	echo "<p>&nbsp; [Physical Params ::::]";
+	print_r($row);
+	echo "</p>";
+	echo "['function and use :::::']";
+	print_r($dmdata['function_use']);
+	echo "<p>&nbsp; [data mngmt ::::]";
+	print_r($dmdata['datamanagement']);
+	echo "</p>";
+	echo "<p>&nbsp; [engine ::::]";
+	print_r($dmdata['engine']);
+	echo "</p>";
+	echo "<p>&nbsp; [generator ::::]";
+	print_r($dmdata['generator']);
+	echo "</p>";
+	echo "<p>&nbsp; [last_int ::::]";
+	print_r($dmdata['last_int']);
+	echo "</p>";
+	echo "<p>&nbsp; [pumps ::::]";
+	print_r($dmdata['pumps']);
+	echo "</p>";
+		echo "<p>&nbsp; [source management ::::]";
+	print_r($dmdata['mgmt']);
+	echo "</p>";
+	echo "<p>&nbsp; [supply and distrib ::::]";
+	print_r($dmdata['supply']);
+	echo "</p>";
+	echo "<p>&nbsp; [water xtics ::::]";
+	print_r($dmdata['waterxtics']);
+	echo "</p>";
+	echo "<p>&nbsp; [attached file ::::]";
+	print_r($dmdata['files']);
+	echo "</p>";
+	
+	echo "<p>";
+	echo " [ location]:::";
+	print_r($location);
+	echo "&nbsp;</p><br><p style='text-decoration:underline; width:100%'><div style='width:100%; background:#ccd'>
+	>< > < >< > < 
+	</div>
+	</p><p>&nbsp</p>";
+  /*print_r($row);
+  echo "<p>new</p>"; 
+*/
+}
+/*$row = mysql_fetch_array($result);
+foreach ($row as $res){
+	echo "<p>";
+	print($res);
+	echo "</p>";
+}*/
+function extend_dmid($dmid){
+	$query = mysql_query("SELECT * FROM tblfunction_use WHERE datamid = '$dmid'");
+	$query1 = mysql_query("SELECT * FROM tbldatamanagement WHERE dmid = '$dmid'");
+	$query2 = mysql_query("SELECT * FROM tblengines WHERE dmid = '$dmid'");
+	$query3 = mysql_query("SELECT * FROM tblgenerator WHERE dmid = '$dmid'");
+	$query4 = mysql_query("SELECT * FROM tbllastintervention WHERE dmid = '$dmid'");
+	$query5 = mysql_query("SELECT * FROM tblpumps WHERE dmid = '$dmid'");
+	$query6 = mysql_query("SELECT * FROM tblsourcemanagement WHERE dmid = '$dmid'");
+	$query7 = mysql_query("SELECT * FROM tblsupplydistribution WHERE dmid = '$dmid'");
+	$query8 = mysql_query("SELECT * FROM tblwatercharacteristic WHERE dmid = '$dmid'");
+	$query9 = mysql_query("SELECT * FROM tblattachedfile WHERE dmid = '$dmid'");
+	
+	
+	
+	$row = array();
+	$row['function_use'] = mysql_fetch_array($query);
+	$row['datamanagement'] = mysql_fetch_array($query1);
+	$row['engine'] = mysql_fetch_array($query2);
+	$row['generator'] = mysql_fetch_array($query3);
+	$row['last_int'] = mysql_fetch_array($query4);
+	$row['pumps'] = mysql_fetch_array($query5);
+	$row['mgmt'] = mysql_fetch_array($query6);
+	$row['supply'] = mysql_fetch_array($query7);
+	$row['waterxtics'] = mysql_fetch_array($query8);
+	while ($files = mysql_fetch_array($query9)) {
+	$row['files'] = $files;
+}
+	return $row;
+	
+}
+function extend_damid($damid){
+}
+function extend_locationid($locationid){
+	$query = mysql_query("SELECT * FROM tbllocation WHERE locationid = '$locationid'");
+	$row = mysql_fetch_array($query);
+	return $row;
+}
+?>

@@ -1,0 +1,11 @@
+name = pclzip_d7
+description = "PclZip integration (see <a href='http://www.phpconcept.net/pclzip' target='_blank'>the author's website</a> )"
+package = PclZip
+core = 7.x
+dependencies[] = libraries
+; Information added by drupal.org packaging script on 2011-11-07
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "pclzip"
+datestamp = "1320625382"
+
